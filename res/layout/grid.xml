@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_weight=".75"
+		android:layout_width="0px"
+		android:layout_height="match_parent"
+		android:background="@color/black">
+		
+		<Button
+			android:id="@+id/start_button"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="40dip"
+			android:layout_marginRight="40dip"
+			android:layout_marginTop="20dip"
+			android:text="Start Game" />
+			
+		<TextView
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip"
+			android:layout_marginLeft="10dip"
+			android:text="Animation Speed"
+			android:textSize="20sp"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="left" />
+		<SeekBar
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:max="10"
+			android:progress="5"
+			android:id="@+id/animation_speed" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+				<TextView
+					android:layout_width="0px"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dip"
+					android:layout_weight=".5"
+					android:text="slow"
+					android:gravity="left" />
+				<TextView
+					android:layout_width="0px"
+					android:layout_marginRight="10dip"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:text="fast"
+					android:gravity="right" />
+		</LinearLayout>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dip"
+			android:layout_marginTop="25dip"
+			android:text="Set Underpopulation Variable:"
+			android:textSize="18.5sp" />
+		<Spinner
+		    android:gravity="left"
+		    android:layout_marginTop="4dip"
+		    android:id="@+id/underpopulation_spinner"
+		  	android:layout_width = "wrap_content"
+		  	android:layout_height = "wrap_content" >
+		</Spinner>
+	</LinearLayout>
+	<FrameLayout
+	android:layout_width="0px"
+	android:layout_weight="2.25"
+	android:layout_height="match_parent"
+	android:orientation="horizontal" >
+	<com.javamonn.gameoflife.Grid
+		android:id="@+id/grid_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />		
+	</FrameLayout>
+	
+</LinearLayout>

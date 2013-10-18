@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/darker_gray" >
+		
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent" >
+		
+		<TextView
+			android:text="@string/main_title"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:textSize="50sp"
+			android:layout_marginTop="60dip"
+			android:layout_marginBottom="60dip" />
+		<Button
+			android:id="@+id/continue_button"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="@string/continue_label"
+			android:layout_marginBottom="10dip"
+			android:layout_marginLeft="200dip"
+			android:layout_marginRight="200dip"
+			android:layout_gravity="center"/>
+			
+		<Button
+			android:id="@+id/new_button"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="@string/new_game_label"
+			android:layout_marginBottom="10dip"
+			android:layout_marginLeft="200dip"
+			android:layout_marginRight="200dip"
+			android:layout_gravity="center"/>
+			
+		<Button
+			android:id="@+id/about_button"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="@string/about_label"
+			android:layout_marginBottom="10dip"
+			android:layout_marginLeft="200dip"
+			android:layout_marginRight="200dip"
+			android:layout_gravity="center"/>
+			
+		<Button
+			android:id="@+id/exit_button"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="@string/exit_label"
+			android:layout_marginBottom="10dip"
+			android:layout_marginLeft="200dip"
+			android:layout_marginRight="200dip"
+			android:layout_gravity="center"/>
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal" >
+			<com.javamonn.gameoflife.Grid
+				android:id="@+id/grid_main"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />		
+		</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

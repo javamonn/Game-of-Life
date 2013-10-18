@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference 
+		android:key="UNDERPOPULATION_VARIABLE"
+        android:title="@string/minimum_title"
+        android:summary="@string/minimum_summary"
+        android:entries="@array/underpopulation_options" 
+        android:entryValues="@array/underpopulation_values"
+        android:dialogTitle="@string/minimum_title" 
+		android:defaultValue="2" />
+	<ListPreference 
+		android:key="OVERPOPULATION_VARIABLE"
+        android:title="@string/maximum_title"
+        android:summary="@string/maximum_summary"
+        android:entries="@array/overpopulation_options" 
+        android:entryValues="@array/overpopulation_values"
+        android:dialogTitle="@string/maximum_title" 
+		android:defaultValue="3" />
+	<ListPreference 
+		android:key="SPAWN_VARIABLE"
+        android:title="@string/spawn_title"
+        android:summary="@string/spawn_summary"
+        android:entries="@array/spawn_options" 
+        android:entryValues="@array/spawn_values"
+        android:dialogTitle="@string/spawn_title" 
+		android:defaultValue="3" />
+	<ListPreference
+		android:key="ANIMATION_SPEED_VARIABLE"
+		android:title="@string/animation_speed_title"
+		android:summary="@string/animation_speed_summary"
+		android:entries="@array/animation_speed_options"
+		android:entryValues="@array/animation_speed_values"
+		android:dialogTitle="@string/animation_speed_title" 
+		android:defaultValue="4" />
+	<CheckBoxPreference 
+		android:key="COLOR_CODING"
+        android:title="@string/color_coding_title" 
+        android:summary="@string/color_coding_summary"
+        android:defaultValue="false" />
+</PreferenceScreen>

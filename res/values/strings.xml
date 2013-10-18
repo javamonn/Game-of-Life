@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Game Of Life</string>
+	<string name="main_title">Game Of Life</string>
+	<string name="continue_label">Continue</string>
+	<string name="new_game_label">New Game</string>
+	<string name="about_label">About</string>
+	<string name="exit_label">Exit</string>
+	
+	<string name="about_title">About Game Of Life</string>
+	<string name="about_text">
+		The Game of Life, also known simply as Life, is a 
+		<i>cellular automaton</i> devised by the British mathematician 
+		John Horton Conway in 1970. It is the best-known example 
+		of a cellular automaton.
+		</string>
+		
+	<string name="grid_title">Game Of Life Grid</string>
+	<string name="settings_label">Settings...</string>
+	<string name="settings_title">Game Of Life Settings</string>
+	<string name="settings_shortcut">s</string>
+	<string name="color_coding_title">Color coding?</string>
+	<string name="color_coding_summary">
+		Map the rate of survival to distinct colors
+		</string>
+	<string name="minimum_title">Minimum variable</string>
+	<string name="minimum_summary">
+		Any live cell with fewer than the minimum number of 
+		live neighbours dies, as if caused by under-population
+		</string>
+		
+	<string name="maximum_title">Maximum variable</string>
+	<string name="maximum_summary">
+		Any live cell with more than the maximum number of 
+		live neighbours dies, as if caused by over-population
+	</string>
+	
+	<string name="spawn_title">Spawn variable</string>
+	<string name="spawn_summary">
+		Any dead cell with exactly the spawn number of live cells 
+		becomes a live cell
+	</string>
+	
+	<string name="animation_speed_title">Animation speed variable</string>
+	<string name="animation_speed_summary">
+		Control how fast the game progresses. Faster animation speed 
+		means each generation will live for a shorter amount of time 
+		before being replaced by the next generation. </string>
+
+</resources>
